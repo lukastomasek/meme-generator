@@ -7,16 +7,22 @@
   <title>Meme Generator</title>
   <link rel="stylesheet" href="css/style.css">
   <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/classes/Utility.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">  
 </head>
 <body>
   <main>
     <header>
       <h1>meme generator</h1>
-      <img id="meme-img" src="" alt="meme-image">
+       <div class="meme-img">
+        <img width="400px" height="400px"  id="meme-img" src="" alt="meme-image">
+       </div>
     </header>
     <section class="content">
-      <p id="meme">meme name</p>
-      <button id="meme-btn">generate meme</button>
+      <p id="meme"> </p>
+      <button id="meme-btn">new meme</button>
     </section>
   </main>
 </body>
