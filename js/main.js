@@ -7,6 +7,12 @@ const btn = document.getElementById('meme-btn')
 
 const url = "https://api.imgflip.com/get_memes"
 
+
+// nullish coalescing operator
+const name = null ?? "John"
+
+console.log(name)
+
 let id = 0
 
 const Utils = new Utility()
@@ -33,7 +39,7 @@ async function getRandomMeme(){
 const randomColor = () =>{
   background.style.backgroundColor = Utils.getRandomPastelColor()
   background.style.color = Utils.getRandomColor()
-  btn.style.backgroundColor = Utils.getRandomColor();
+  btn.style.backgroundColor = Utils.getRandomColor()
 }
 
 
